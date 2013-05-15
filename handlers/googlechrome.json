@@ -1,0 +1,69 @@
+{
+	"Chrome Tab Management": {
+		"icon": "http://www.google.com/images/icons/product/chrome-16.png",
+		"matches": ["tab", "page", "website", "chrome", "browser", "web", "webpage", 
+			"add", "new", "make",
+			"navigate", "go", "change", "browse",
+			"remove", "delete", "cancel", "trash",
+			"scroll", "snap", "jump"
+		],
+		"actions": {
+			"Create a new tab": {
+				"matches": ["add", "make"],
+				"handler": "GoogleChrome.createTab",
+				"parameters": ["what"]
+			},
+			"Enlarge current viewable area of page": {
+				"matches": ["enhance", "enlarge", "show", "go"],
+				"handler": "GoogleChrome.enhance",
+				"parameters": ["what"]
+			},
+			"Type in an input field": {
+				"matches": ["type", "enter", "text", "entry"],
+				"handler": "GoogleChrome.type",
+				"parameters": ["what"]
+			},
+			"Navigate to a new page": {
+				"matches": ["navigate", "go", "goto", "change", "open", "new", "browse"],
+				"handler": "GoogleChrome.navigateTo",
+				"parameters": ["what"]
+			},
+			"Remove an existing tab": {
+				"matches": ["remove", "delete", "cancel", "trash", "close"],
+				"handler": "GoogleChrome.removeTab",
+				"parameters": ["what"]
+			},
+			"Reload existing tab": {
+				"matches": ["reload", "refresh", "retry", "reset"],
+				"handler": "GoogleChrome.reloadTab",
+				"parameters": ["what"]
+			},
+			"Jump around in a tab": {
+				"matches": ["jump", "snap"],
+				"handler": "GoogleChrome.jumpTab",
+				"parameters": ["what"]
+			},
+			"Scroll around in a tab": {
+				"matches": ["scroll", "up", "down", "top", "bottom"],
+				"handler": "GoogleChrome.scrollTab",
+				"parameters": ["what"]
+			}
+		}
+	},
+	"Chrome Reminders": {
+		"matches": ["remind me to", "remind me", "remind to", "remind him", "remind him to", "remind her", "remind her to",
+			"set a reminder to", "set a reminder", "set reminder", "remind", "reminder",
+			"wake me up", "wake me", 
+			"alert me", "show popup", 
+			"notify me", "show notification",
+			"hermine", "why me to", "buy me to", "buy me a"],
+			"actions": {
+				"Create a new reminder": {
+					"matches": ["*"],
+					"handler": "GoogleChrome.createReminder",
+					"parameters": ["when", "what"]
+				}
+			}
+	}
+}
+

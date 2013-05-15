@@ -1,0 +1,9 @@
+{
+	"actions": {
+		"image|images|picture|pictures": {
+			"*": GoogleImages.findImage()
+		}
+	}
+}
+
+

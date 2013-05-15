@@ -1,0 +1,49 @@
+{
+	"Grooveshark": {
+		"matches": ["grooveshark", "radio", "song", "music", "beats", "tune", "tunes"],
+		"actions": {
+			"Play music": {
+				"matches": ["start", "play"],
+				"handler": "Grooveshark.play",
+				"parameters": ["what"]
+			},
+			"Pause music": {
+				"matches": ["pause", "hold", "stop", "off", "call", "paul", "pop", "top", "spas", "cause", "pos", "how's"],
+				"handler": "Grooveshark.pause",
+				"parameters": ["what"]
+			},
+			"Go to next song": {
+				"matches": ["next", "skip", "another", "different", "tonight"],
+				"handler": "Grooveshark.next",
+				"parameters": ["what"]
+			},
+			"Go to previous song": {
+				"matches": ["previous", "last", "before"],
+				"handler": "Grooveshark.previous",
+				"parameters": ["what"]
+			},
+			"Seek to a point in this song": {
+				"matches": ["seek", "seek to", "go to"],
+				"handler": "Grooveshark.seekTo",
+				"parameters": ["what"]
+			},
+			"Increase volume": {
+				"matches": ["up", "amplify", "increase", "more"],
+				"handler": "Grooveshark.volumeUp",
+				"parameters": ["what"]
+			},
+			"Decrease volume": {
+				"matches": ["down", "deamplify", "decrease", "less"],
+				"handler": "Grooveshark.volumeDown",
+				"parameters": ["what"]
+			},
+			"Song information": {
+				"matches": ["who", "what is", "name of"],
+				"handler": "Grooveshark.information",
+				"parameters": ["what"]
+			}
+		}
+	}
+}
+
+

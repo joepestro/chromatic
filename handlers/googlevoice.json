@@ -1,0 +1,15 @@
+{
+	"actions": {
+		"call|phone|voice|cell": {
+			"*": GoogleVoice.createCall()
+		},
+		"text|sms|mms": {
+			"send": GoogleVoice.createSMS(),
+			"read|speak|tell": GoogleVoice.readSMS()
+		},
+		"voicemail": {
+			"read|speak|tell": GoogleVoice.readVoicemail()
+		}
+	}
+}
+

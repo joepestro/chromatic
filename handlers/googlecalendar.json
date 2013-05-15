@@ -1,0 +1,32 @@
+{
+	"Check Google Calendar": {
+		"matches": ["day look like", "events", "appointments", "meetings", "calendar", "today", "tomorrow", "this week"],
+		"actions": {
+			"Read events": {
+				"matches": ["*"],
+				"handler": "GoogleCalendar.checkCalendar",
+				"parameters": ["what", "when"]
+			}
+		}
+	},
+	"Modify Google Calendar": {
+		"matches": ["event", "appointment", "meeting"],
+		"actions": {
+			"Create an event": {
+				"matches": ["add", "new", "make"],
+				"handler": "GoogleCalendar.createEvent",
+				"parameters": ["what", "who", "when"]
+			},
+			"Modify an event": {
+				"matches": ["change", "move", "replace", "modify"],
+				"handler": "GoogleCalendar.modifyEvent",
+				"parameters": ["what", "when"]
+			},
+			"Delete an event": {
+				"matches": ["remove", "delete", "cancel", "trash"]
+				"handler": "GoogleCalendar.removeEvent",
+				"parameters": ["what", "when"]
+			}
+		}
+	}
+}

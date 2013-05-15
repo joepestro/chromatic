@@ -1,0 +1,13 @@
+{
+	"DuckDuckGo": {
+		"matches": ["*"],
+		"actions": {
+			"Search": {
+				"matches": ["*"],
+				"handler": "DuckDuckGo.search",
+				"parameters": ["what"]
+			}
+		}
+	}
+}
+

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/css/google.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<div id="top">
+			<ul id="links">
+				<li><a href="#" id="options" class="button" tabindex="-1">Examples</a></li>
+			</ul>
+
+			<h1>What can I do for you?</h1>
+			<h2>Chromatic is <span id="status">loading...</span></h2>
+		</div>
+
+		<div id="scroll">
+			<ul id="guide">
+				<li>
+				<h3>Set Reminders</h3>
+				<blockquote>"Remind me to pick up milk"</blockquote>
+				</li>
+
+				<li>
+				<h3>Check Gmail</h3>
+				<blockquote>"How many emails do I have?"</blockquote>
+				</li>
+
+				<li>
+				<h3>Control webpages</h3>
+				<blockquote>"Scroll down slowly"</blockquote>
+				</li>
+
+				<li>
+				<a href="#" id="learnmore" class="blueButton">Learn more</a>
+				</li>
+			</ul>
+
+			<ul id="conversation"> 
+			</ul>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+		<script>
+			function clearConversation() {
+				$("#conversation").empty();
+			}
+
+			function addRetort(utterance, who) {
+				$("#guide").remove();
+				$("#conversation").append("<li class=\"" + who + "\"><p>" + utterance + "</p></li>");
+			}
+
+			function updateStatus() {
+				var status = bg.getStatus();
+				$("#status").text(status);
+				$("#status").removeClass().addClass(status.split(" ")[0].toLowerCase());
+			}
+
+			function updateRetorts() {
+				var retorts = bg.getRetorts();
+
+				clearConversation();
+				for (var i = 0; i < retorts.length; i++)
+					addRetort(retorts[i][0], retorts[i][1]);
+
+				// TODO: animate in
+				setTimeout(function() {
+					$(document).scrollTo("max");
+				}, 500);
+			}
+
+			// your wish is my command
+			var bg = chrome.extension.getBackgroundPage();
+			bg.listen();
+			bg.playSound("beepbeep.ogg");
+
+			// make sure we have latest information from bg page
+			updateStatus();
+			updateRetorts();
+
+			// animate icon
+			setTimeout(function() {
+				$("h1").toggleClass("wiggle");
+			}, 500);
+
+			// handle clicks
+			$("#options, #learnmore").click(bg.openOptions);
+
+			// handle popup close
+			$(window).unload(function() {
+				bg.stopListening();
+			});
+		</script>
+	</body>
+</html>

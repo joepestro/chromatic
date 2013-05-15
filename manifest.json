@@ -1,0 +1,29 @@
+{
+	"name": "Chromatic",
+	"version": "1.0",
+	"description": "Be in harmony with Chrome. Use your voice to get things done.",
+	"permissions": [
+		"tabs",
+		"notifications",
+		"clipboard",
+		"tts",
+		"geolocation",
+		"experimental",
+		"speechInput",
+		"*://*/",
+		"*://grooveshark.com/*",
+		"*://mail.google.com/*"
+	],
+	"icons": {
+		"16" : "images/16.png",
+		"48" : "images/48.png"
+		// "128" : "images/128.png"
+	},
+	"background_page" : "background.html",
+	"options_page": "options.html",	
+	"browser_action": {
+		"default_icon": "images/48.png", 
+		"default_title": "Chromatic",
+		"popup": "popup.html"
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"Search": {
+		"matches": ["google", "youtube", "twitter", "facebook", "reddit", "duck duck go", "wolfram alpha",
+					"search", "show", "find", "grab", "list", "a good", "look up",
+					"search google", "search youtube", "search twitter", "search facebook", "search reddit", "search duck duck go", "search wolfram alpha"],
+		"actions": {
+			"Google": {
+				"matches": ["google", "web", "internet", "website", "page", "pages", "search"],
+				"handler": "Search.google",
+				"parameters": ["what"]
+			},
+			"YouTube": {
+				"matches": ["youtube", "you tube", "tube", "video", "clip", "movie"],
+				"handler": "Search.youtube",
+				"parameters": ["what"]
+			},
+			"Twitter": {
+				"matches": ["twitter", "tweet", "tweets"],
+				"handler": "Search.twitter",
+				"parameters": ["what"]
+			},
+			"Facebook": {
+				"matches": ["facebook", "face book", "friend", "look up", "friend", "friends"],
+				"handler": "Search.facebook",
+				"parameters": ["what"]
+			},
+			"Reddit": {
+				"matches": ["reddit", "red it"],
+				"handler": "Search.reddit",
+				"parameters": ["what"]
+			},
+			"Duck Duck Go": {
+				"matches": ["duckduckgo", "duck duck go", "duck"],
+				"handler": "Search.duckduckgo",
+				"parameters": ["what"]
+			},
+			"Wolfram|Alpha": {
+				"matches": ["wolfram alpha", "wolfram", "wolfrum", "wolf ram", "wolf rum", "alpha"],
+				"handler": "Search.wolframalpha",
+				"parameters": ["what"]
+			}
+		}
+	}
+}
+
+
+

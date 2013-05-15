@@ -1,0 +1,97 @@
+{
+	"2001: A Space Odyssey": {
+		matches: ["open the pod bay doors"],
+		actions: {
+			"Display a HAL response": {
+				matches: ["*"],
+				handler: "Egg.hal",
+				parameters: ["what"]
+			},
+		}
+	},
+	"Star Wars": {
+		matches: ["use the force", "droids"],
+		actions: {
+			"Display a star wars response": {
+				matches: ["*"],
+				handler: "Egg.starwars",
+				parameters: ["what"]
+			}
+		}
+	},
+	"Star Trek": {
+		matches: ["beam me up"],
+		actions: {
+			"Display a star trek response": {
+				matches: ["*"],
+				handler: "Egg.startrek",
+				parameters: ["what"]
+			}
+		}
+	}
+	"Reddit": {
+		matches: ["narwhal bacon"],
+		actions: {
+			"Display a reddit response": {
+				matches: ["*"],
+				handler: "Egg.reddit",
+				parameters: ["what"]
+			}
+		}
+	},
+	"Starfox": {
+		matches: ["do a barrel roll"],
+		actions: {
+			"Roll the page": {
+				matches: ["*"],
+				handler: "Egg.starfox",
+				parameters: ["what"]
+			}
+		}
+	}
+	"Friday" : { // which seat should i take
+		
+	},
+	"Rickroll": { // never gonna give you up, never gonna let you down
+
+	},
+	"Konami": {
+		matches: ["up up down down left right left right b a select start"]
+	},
+	"Zen": {
+		matches: ["meaning of life", "why am i here"],
+		actions: {
+			"Display a zen response": {
+				matches: ["*"],
+				handler: Egg.zen,
+				parameters: ["what"]
+			},
+		}
+	},
+	"Proverbs": {
+		
+	},
+	"Greetings": {
+		matches: ["hi", "hello", "howdy", "hey", "yo", "what's up", "what is up", "sup", "good morning", "good afternoon", "good evening", "good night", "goodnight"]
+	},
+	"Love": {
+		matches: ["you're awesome", "you are awesome", "love you", "marry me", "thank you", "thanks", "you are the best", "you're the best"]
+	},
+	"Hate": {
+		matches: ["hate you", "you suck", "you're an idiot", "you're dumb", "you're stupid"]
+	},
+	"Sex": {
+		matches: ["you wearing", "penis", "boobs", "boobies", "breast", "a s l", "age sex location"]
+	},
+	"Feelings": {
+		matches: ["how do you feel", "tired", "sleepy"]
+	},
+	"Rhetorical": {
+		matches: ["who's your daddy", "who is your daddy"]
+	},
+	"Jokes": {
+		matches: ["tell me a joke", "knock knock", "how much wood could"]
+	
+	}
+}
+

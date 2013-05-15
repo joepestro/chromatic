@@ -1,0 +1,46 @@
+{
+	"Compose GMail": {
+		"icon": "https://mail.google.com/mail/images/favicon.ico",
+		"matches": ["send email", "send a email", "send an email",
+			"send gmail", "send g mail", "send g male",
+			"compose",
+			"compose message", "compose a message", "compose an message", "compose a new message",
+			"compose email", "compose a email", "compose an email", "new email"],
+			"actions": {
+				"Compose an email": {
+					"matches": ["*"],
+					"handler": "GoogleMail.createEmail",
+					"parameters": ["what", "who", "subject"]
+				}
+			}
+	},
+	"Read GMail Inbox Count": {
+		"icon": "https://mail.google.com/mail/images/favicon.ico",
+		"matches": ["how much email", "how many emails", "how many unread",
+			"unread", "unopened", "new emails", "my inbox"],
+			"actions": {
+				"Read email": {
+					"matches": ["*"],
+					"handler": "GoogleMail.inboxCount",
+					"parameters": ["what"]
+				}
+			}
+	},
+	"Read GMail Inbox Content": {
+		"icon": "https://mail.google.com/mail/images/favicon.ico",
+		"matches": ["read me that email", "read email", "read emails", "read first email",
+			"read in box", "freedom box", "fried inbox", "fried in box",
+			"read my inbox", "read my email", "read my emails",
+			"read all messages", "read all email", "read all emails",
+			"read inbox", "what is in my inbox", "what's in my inbox"],
+		"actions": {
+			"Read email": {
+				"matches": ["*"],
+				"handler": "GoogleMail.inboxContent",
+				"parameters": ["what"]
+			}
+		}
+
+	}
+}
+

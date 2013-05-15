@@ -1,0 +1,15 @@
+{
+	"Weather": {
+		"matches": ["weather", "rain", "snow", "sleet", "hail", "cloudy", "raining", "sun", "sunny", "clouds", "fog", "foggy", "haze", "hazy", "hot", "cold", "warm", "cool", "windy", "breezy", "chilly", "scorcher"],
+		"actions": {
+			"Show forecast": {
+				"matches": ["*"],
+				"handler": "Weather.getForecast",
+				"parameters": ["what", "where", "when"]
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,10 @@
+{
+	"actions": {
+		"youtube|video|stream": {
+			"start|resume|play": YouTube.play(),
+			"pause|stop|halt": YouTube.pause(),
+			"seek|skip|jump|move|go": YouTube.seekTo()
+		}
+	}
+}
+

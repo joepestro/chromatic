@@ -1,0 +1,9 @@
+{
+	"actions": {
+		"news|happening|latest|breaking|events": {
+			"*": GoogleNews.read()
+		}
+	}
+}
+
+

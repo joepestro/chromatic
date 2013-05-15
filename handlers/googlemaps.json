@@ -1,0 +1,18 @@
+{
+	"Google Maps": {
+		"matches": ["what is the fastest way to", "what is the best way to", "what is a good place for", "directions to", "map of", "map", "find", "where", "location", "place", "around", "near", "nearby", "closeby", "close to", "we have", "i have", "i'm", "i am", "we're", "we are"],
+		"actions": {
+			"Show a map": {
+				"matches": ["*"],
+				"handler": "GoogleMaps.search",
+				"parameters": ["what", "where"]
+			},
+			"Show a type of location": {
+				"matches": ["breakfast", "lunch", "dinner", "snack", "beverage", "restaurant", "meal", "eat", "food", "drink", "shop", "business"],
+				"handler": "GoogleMaps.search",
+				"parameters": ["what", "where"]
+			}
+		}
+	}
+}
+
