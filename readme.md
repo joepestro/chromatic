@@ -1,7 +1,9 @@
 Chromatic
 =
 
-A chrome extension that uses looped `speechInput` to accept voice commands, and perform actions. It's kind of like [Siri][1] or [Google Now][2], but for the browser instead.
+A chrome extension that uses looped [speechInput][0] to accept voice commands, and perform actions. It's kind of like [Siri][1] or [Google Now][2], but for the browser instead.
+
+*Note*: you'll need to enable `experimental` in `chrome://flags/`
 
 Since we're in a browser, there are some interesting integrations that are possible. For example:
 
@@ -39,6 +41,7 @@ Yes! | Getting more answers
 --- | ---
 ![](screenshots/inbox.png) | ![](screenshots/multiple.png)
 
+[0]: http://developer.chrome.com/extensions/experimental.speechInput.html
 [1]: http://www.apple.com/ios/siri/
 [2]: http://www.google.com/landing/now/
 [3]: https://duckduckgo.com/api
