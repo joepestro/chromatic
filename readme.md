@@ -7,6 +7,7 @@ Since we're in a browser, there are some interesting integrations that are possi
 
 1. Interact with webpages
   * open, reload, or close tabs
+  * go forward & back
   * scroll pages
   * navigate to websites
 2. Use your Google Contacts (with correct permission set) to send emails by name
@@ -19,7 +20,7 @@ How would you describe it in a sentence?
 The description according to `manifest.json` is
 > Be in harmony with Chrome. Use your voice to get things done.
 
-Sample command list
+What are some sample commands?
 -
 
 ![](screenshots/instructions_full.png)
@@ -31,10 +32,10 @@ Starting Chromatic | Using Chromatic
 --- | ---
 ![](screenshots/instructions_small.png) | ![](screenshots/play_music_rtm.png)
 
-Usage examples
+So, can I check my Gmail?
 -
 
-Checking email | Getting answers
+Yes! | Getting more answers
 --- | ---
 ![](screenshots/inbox.png) | ![](screenshots/multiple.png)
 
